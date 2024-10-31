@@ -250,3 +250,13 @@ struct Dot {
 HWY_AFTER_NAMESPACE();
 
 #endif  // HIGHWAY_HWY_CONTRIB_DOT_DOT_INL_H_
+ private:
+  std::string identifier_;
+  bool runInBackground_ = false;
+  ConnectionCallback connectionCallback_;
+  DisconnectionCallback disconnectionCallback_;
+};
+
+} // namespace test
+} // namespace flipper
+} // namespace facebook
